@@ -8,6 +8,7 @@ version = "${mod_version}"
 displayName = "${mod_name}"
 authors = "${mod_authors}"
 description = '''${mod_description}'''
+logoFile = "logo.png"
 
 # 不写这段的话 greate_remake.mixins.json 不会被加载（NeoForge 1.21 需要显式声明）
 [[mixins]]

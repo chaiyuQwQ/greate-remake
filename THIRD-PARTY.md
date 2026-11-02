@@ -12,7 +12,8 @@ The project itself is licensed under the MIT License — see [LICENSE](LICENSE).
 
 | What | Where | License |
 | --- | --- | --- |
-| All 216 block/item textures (byte-identical copies) | `dev-env/src/main/resources/assets/*/textures` | MIT, © 2024 GreateBeyondTheHorizon |
+| All 216 block/item textures (byte-identical copies) | `src/main/resources/assets/*/textures` | MIT, © 2024 GreateBeyondTheHorizon |
+| Mod logo (`logo.png`, 600×600) | `src/main/resources/logo.png` | MIT, © 2024 GreateBeyondTheHorizon |
 | Feature set, tier model, class layout and naming | whole `src/main/java` tree | MIT (architecture reference; code itself rewritten) |
 
 The upstream MIT text is kept verbatim in [LICENSES/Greate-Upstream-MIT.txt](LICENSES/Greate-Upstream-MIT.txt).

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="src/main/resources/logo.png" alt="Greate Remake" width="200">
+</p>
+
 # Greate Remake
 
 **Greg-ify your Create.** Ten tiers of Create machines built on GregTech CEu materials and voltages —
