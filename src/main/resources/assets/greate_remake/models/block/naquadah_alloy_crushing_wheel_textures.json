@@ -1,0 +1,8 @@
+{
+  "parent": "create:block/crushing_wheel/textures",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "axis": "greate_remake:block/naquadah_alloy/axis",
+    "axis_top": "greate_remake:block/naquadah_alloy/axis_top"
+  }
+}

@@ -1,0 +1,46 @@
+{
+    "type": "gtceu:cutter",
+    "category": "gtceu:cutter",
+    "duration": 150,
+    "inputs": {
+        "fluid": [
+            {
+                "content": {
+                    "amount": 7,
+                    "ingredient": {
+                        "tag": "c:distilled_water"
+                    }
+                }
+            }
+        ],
+        "item": [
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "item": "gtceu:naquadah_alloy_plate"
+                    }
+                }
+            }
+        ]
+    },
+    "outputs": {
+        "item": [
+            {
+                "content": {
+                    "count": 2,
+                    "ingredient": {
+                        "item": "greate_remake:naquadah_alloy_shaft"
+                    }
+                }
+            }
+        ]
+    },
+    "tickInputs": {
+        "eu": [
+            {
+                "content": 30
+            }
+        ]
+    }
+}

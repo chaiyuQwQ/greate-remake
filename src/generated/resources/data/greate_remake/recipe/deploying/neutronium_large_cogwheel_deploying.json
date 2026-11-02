@@ -1,0 +1,16 @@
+{
+    "type": "create:deploying",
+    "ingredients": [
+        {
+            "item": "greate_remake:neutronium_cogwheel"
+        },
+        {
+            "item": "gtceu:neutronium_plate"
+        }
+    ],
+    "results": [
+        {
+            "id": "greate_remake:large_neutronium_cogwheel"
+        }
+    ]
+}

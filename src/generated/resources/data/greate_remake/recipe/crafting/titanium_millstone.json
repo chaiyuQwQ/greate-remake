@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "A": {
+            "item": "greate_remake:titanium_cogwheel"
+        },
+        "H": {
+            "item": "create:copper_casing"
+        },
+        "S": {
+            "item": "greate_remake:titanium_shaft"
+        },
+        "W": {
+            "tag": "minecraft:wooden_slabs"
+        }
+    },
+    "pattern": [
+        " A ",
+        "WHW",
+        " S "
+    ],
+    "result": {
+        "id": "greate_remake:titanium_millstone"
+    }
+}

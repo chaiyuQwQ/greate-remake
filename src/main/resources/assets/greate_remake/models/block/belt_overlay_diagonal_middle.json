@@ -1,0 +1,8 @@
+{
+  "parent": "create:block/belt/diagonal_middle",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "0": "greate_remake:block/belt_overlay/empty",
+    "particle": "greate_remake:block/polybenzimidazole/belt_diagonal"
+  }
+}

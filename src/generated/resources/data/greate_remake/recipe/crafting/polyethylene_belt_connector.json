@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "create:belt_connector"
+        },
+        {
+            "item": "gtceu:polyethylene_dust"
+        },
+        {
+            "item": "gtceu:polyethylene_dust"
+        },
+        {
+            "item": "gtceu:polyethylene_dust"
+        },
+        {
+            "item": "gtceu:polyethylene_dust"
+        }
+    ],
+    "result": {
+        "id": "greate_remake:polyethylene_belt_connector"
+    }
+}

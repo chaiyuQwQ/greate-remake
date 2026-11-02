@@ -1,0 +1,8 @@
+# 文本按仓库统一换行（.git 里存 LF），二进制文件不做任何转换
+* text=auto
+
+*.jar   binary
+*.nbt   binary
+*.png   binary
+*.ogg   binary
+*.zip   binary

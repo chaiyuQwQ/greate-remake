@@ -1,0 +1,9 @@
+{
+  "parent": "create:block/large_cogwheel",
+  "textures": {
+    "0": "greate_remake:block/darmstadtium/cogwheel_axis",
+    "3": "greate_remake:block/darmstadtium/axis_top",
+    "4": "greate_remake:block/darmstadtium/large_cogwheel",
+    "particle": "greate_remake:block/darmstadtium/large_cogwheel"
+  }
+}

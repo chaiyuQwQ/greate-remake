@@ -1,0 +1,16 @@
+{
+    "type": "greate_remake:sawing",
+    "ingredients": [
+        {
+            "item": "gtceu:titanium_ingot"
+        }
+    ],
+    "processing_time": 50,
+    "recipe_tier": 4,
+    "results": [
+        {
+            "count": 2,
+            "id": "gtceu:titanium_rod"
+        }
+    ]
+}

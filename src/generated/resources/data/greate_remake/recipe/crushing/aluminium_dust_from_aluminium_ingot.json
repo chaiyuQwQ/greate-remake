@@ -1,0 +1,15 @@
+{
+    "type": "greate_remake:crushing",
+    "ingredients": [
+        {
+            "item": "gtceu:aluminium_ingot"
+        }
+    ],
+    "recipe_tier": 2,
+    "results": [
+        {
+            "count": 2,
+            "id": "gtceu:aluminium_dust"
+        }
+    ]
+}

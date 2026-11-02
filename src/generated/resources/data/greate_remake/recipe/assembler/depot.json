@@ -1,0 +1,54 @@
+{
+    "type": "gtceu:assembler",
+    "category": "gtceu:assembler",
+    "duration": 300,
+    "inputs": {
+        "item": [
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "item": "create:andesite_alloy"
+                    }
+                }
+            },
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "item": "create:andesite_casing"
+                    }
+                }
+            },
+            {
+                "chance": 0,
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "type": "gtceu:circuit",
+                        "configuration": 3
+                    }
+                }
+            }
+        ]
+    },
+    "outputs": {
+        "item": [
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "item": "create:depot"
+                    }
+                }
+            }
+        ]
+    },
+    "tickInputs": {
+        "eu": [
+            {
+                "content": 30
+            }
+        ]
+    }
+}

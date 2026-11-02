@@ -1,0 +1,15 @@
+{
+    "type": "greate_remake:pressing",
+    "ingredients": [
+        {
+            "item": "gtceu:titanium_ingot"
+        }
+    ],
+    "recipe_tier": 4,
+    "results": [
+        {
+            "count": 1,
+            "id": "gtceu:titanium_plate"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "C": {
+            "item": "create:railway_casing"
+        },
+        "P": {
+            "item": "gtceu:darmstadtium_plate"
+        },
+        "S": {
+            "item": "greate_remake:darmstadtium_shaft"
+        }
+    },
+    "pattern": [
+        "P P",
+        "SCS",
+        " P "
+    ],
+    "result": {
+        "id": "greate_remake:darmstadtium_mechanical_pump"
+    }
+}

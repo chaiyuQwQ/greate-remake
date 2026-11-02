@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "greate_remake:darmstadtium_cogwheel"
+        },
+        {
+            "item": "greate_remake:darmstadtium_cogwheel"
+        },
+        {
+            "item": "gtceu:darmstadtium_plate"
+        },
+        {
+            "item": "gtceu:darmstadtium_plate"
+        },
+        {
+            "item": "gtceu:darmstadtium_plate"
+        },
+        {
+            "item": "gtceu:darmstadtium_plate"
+        }
+    ],
+    "result": {
+        "id": "greate_remake:darmstadtium_crushing_wheel"
+    }
+}

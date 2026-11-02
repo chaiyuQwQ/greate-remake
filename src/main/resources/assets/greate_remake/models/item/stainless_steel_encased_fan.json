@@ -1,0 +1,6 @@
+{
+  "parent": "create:block/encased_fan/item",
+  "textures": {
+    "fan_blades": "greate_remake:block/stainless_steel/fan_blades"
+  }
+}

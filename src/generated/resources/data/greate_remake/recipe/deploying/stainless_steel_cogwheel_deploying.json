@@ -1,0 +1,16 @@
+{
+    "type": "create:deploying",
+    "ingredients": [
+        {
+            "item": "greate_remake:stainless_steel_shaft"
+        },
+        {
+            "item": "gtceu:stainless_steel_plate"
+        }
+    ],
+    "results": [
+        {
+            "id": "greate_remake:stainless_steel_cogwheel"
+        }
+    ]
+}

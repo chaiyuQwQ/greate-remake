@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "gtceu:stainless_steel_plate"
+        },
+        {
+            "item": "gtceu:stainless_steel_plate"
+        }
+    ],
+    "result": {
+        "count": 4,
+        "id": "greate_remake:stainless_steel_shaft"
+    }
+}

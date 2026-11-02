@@ -1,0 +1,16 @@
+{
+    "type": "create:deploying",
+    "ingredients": [
+        {
+            "item": "greate_remake:andesite_alloy_cogwheel"
+        },
+        {
+            "item": "create:andesite_alloy"
+        }
+    ],
+    "results": [
+        {
+            "id": "greate_remake:large_andesite_alloy_cogwheel"
+        }
+    ]
+}

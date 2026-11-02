@@ -1,0 +1,15 @@
+{
+    "type": "greate_remake:crushing",
+    "ingredients": [
+        {
+            "item": "gtceu:titanium_ingot"
+        }
+    ],
+    "recipe_tier": 4,
+    "results": [
+        {
+            "count": 2,
+            "id": "gtceu:titanium_dust"
+        }
+    ]
+}

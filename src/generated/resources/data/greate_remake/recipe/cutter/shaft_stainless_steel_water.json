@@ -1,0 +1,46 @@
+{
+    "type": "gtceu:cutter",
+    "category": "gtceu:cutter",
+    "duration": 200,
+    "inputs": {
+        "fluid": [
+            {
+                "content": {
+                    "amount": 9,
+                    "ingredient": {
+                        "tag": "c:water"
+                    }
+                }
+            }
+        ],
+        "item": [
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "item": "gtceu:stainless_steel_plate"
+                    }
+                }
+            }
+        ]
+    },
+    "outputs": {
+        "item": [
+            {
+                "content": {
+                    "count": 2,
+                    "ingredient": {
+                        "item": "greate_remake:stainless_steel_shaft"
+                    }
+                }
+            }
+        ]
+    },
+    "tickInputs": {
+        "eu": [
+            {
+                "content": 30
+            }
+        ]
+    }
+}

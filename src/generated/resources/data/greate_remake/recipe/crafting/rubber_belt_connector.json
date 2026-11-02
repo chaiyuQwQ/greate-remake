@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "create:belt_connector"
+        },
+        {
+            "item": "gtceu:rubber_dust"
+        },
+        {
+            "item": "gtceu:rubber_dust"
+        },
+        {
+            "item": "gtceu:rubber_dust"
+        },
+        {
+            "item": "gtceu:rubber_dust"
+        }
+    ],
+    "result": {
+        "id": "greate_remake:rubber_belt_connector"
+    }
+}

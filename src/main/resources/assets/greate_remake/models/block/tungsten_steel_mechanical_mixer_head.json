@@ -1,0 +1,7 @@
+{
+  "parent": "create:block/mechanical_mixer/head",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "6": "greate_remake:block/tungsten_steel/mixer_head"
+  }
+}

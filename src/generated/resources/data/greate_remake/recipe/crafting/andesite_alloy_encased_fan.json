@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "C": {
+            "item": "create:andesite_casing"
+        },
+        "P": {
+            "item": "create:andesite_alloy"
+        },
+        "S": {
+            "item": "greate_remake:andesite_alloy_shaft"
+        }
+    },
+    "pattern": [
+        " P ",
+        "PCP",
+        " S "
+    ],
+    "result": {
+        "id": "greate_remake:andesite_alloy_encased_fan"
+    }
+}

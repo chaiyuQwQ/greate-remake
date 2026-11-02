@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "greate_remake:neutronium_cogwheel"
+        },
+        {
+            "item": "greate_remake:neutronium_cogwheel"
+        },
+        {
+            "item": "gtceu:neutronium_plate"
+        },
+        {
+            "item": "gtceu:neutronium_plate"
+        },
+        {
+            "item": "gtceu:neutronium_plate"
+        },
+        {
+            "item": "gtceu:neutronium_plate"
+        }
+    ],
+    "result": {
+        "id": "greate_remake:neutronium_crushing_wheel"
+    }
+}

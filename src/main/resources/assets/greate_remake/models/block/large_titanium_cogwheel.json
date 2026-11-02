@@ -1,0 +1,9 @@
+{
+  "parent": "create:block/large_cogwheel",
+  "textures": {
+    "0": "greate_remake:block/titanium/cogwheel_axis",
+    "3": "greate_remake:block/titanium/axis_top",
+    "4": "greate_remake:block/titanium/large_cogwheel",
+    "particle": "greate_remake:block/titanium/large_cogwheel"
+  }
+}

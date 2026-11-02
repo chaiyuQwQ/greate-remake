@@ -1,0 +1,7 @@
+{
+  "parent": "create:block/belt_pulley",
+  "textures": {
+    "0": "greate_remake:block/darmstadtium/axis",
+    "1": "greate_remake:block/darmstadtium/axis_top"
+  }
+}

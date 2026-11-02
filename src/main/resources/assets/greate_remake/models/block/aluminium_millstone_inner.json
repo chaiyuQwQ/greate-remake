@@ -1,0 +1,9 @@
+{
+  "parent": "create:block/millstone/inner",
+  "textures": {
+    "1_0": "greate_remake:block/aluminium/axis",
+    "1_1": "greate_remake:block/aluminium/axis_top",
+    "5": "greate_remake:block/aluminium/millstone",
+    "particle": "greate_remake:block/aluminium/axis"
+  }
+}

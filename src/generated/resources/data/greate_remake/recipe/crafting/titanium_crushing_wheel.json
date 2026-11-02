@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "greate_remake:titanium_cogwheel"
+        },
+        {
+            "item": "greate_remake:titanium_cogwheel"
+        },
+        {
+            "item": "gtceu:titanium_plate"
+        },
+        {
+            "item": "gtceu:titanium_plate"
+        },
+        {
+            "item": "gtceu:titanium_plate"
+        },
+        {
+            "item": "gtceu:titanium_plate"
+        }
+    ],
+    "result": {
+        "id": "greate_remake:titanium_crushing_wheel"
+    }
+}

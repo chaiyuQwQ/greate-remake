@@ -1,0 +1,9 @@
+{
+  "parent": "create:block/encased_fan/propeller",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "axis": "greate_remake:block/neutronium/axis",
+    "axis_top": "greate_remake:block/neutronium/axis_top",
+    "fan_blades": "greate_remake:block/neutronium/fan_blades"
+  }
+}

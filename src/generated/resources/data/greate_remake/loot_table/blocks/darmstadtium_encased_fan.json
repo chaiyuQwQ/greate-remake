@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "bonus_rolls": 0.0,
+            "conditions": [
+                {
+                    "condition": "minecraft:survives_explosion"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "greate_remake:darmstadtium_encased_fan"
+                }
+            ],
+            "rolls": 1.0
+        }
+    ],
+    "random_sequence": "greate_remake:blocks/darmstadtium_encased_fan"
+}

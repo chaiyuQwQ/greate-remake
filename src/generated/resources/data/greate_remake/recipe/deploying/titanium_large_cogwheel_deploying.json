@@ -1,0 +1,16 @@
+{
+    "type": "create:deploying",
+    "ingredients": [
+        {
+            "item": "greate_remake:titanium_cogwheel"
+        },
+        {
+            "item": "gtceu:titanium_plate"
+        }
+    ],
+    "results": [
+        {
+            "id": "greate_remake:large_titanium_cogwheel"
+        }
+    ]
+}

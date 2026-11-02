@@ -1,0 +1,8 @@
+{
+  "parent": "create:block/mechanical_saw/blade_horizontal_inactive",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "stonecutter_saw": "greate_remake:block/naquadah_alloy/static_saw",
+    "stonecutter_saw_reversed": "greate_remake:block/naquadah_alloy/static_saw"
+  }
+}

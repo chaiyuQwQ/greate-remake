@@ -1,0 +1,17 @@
+{
+    "type": "greate_remake:milling",
+    "ingredients": [
+        {
+            "item": "create:andesite_alloy"
+        }
+    ],
+    "processing_time": 120,
+    "recipe_tier": 3,
+    "results": [
+        {
+            "chance": 1.0,
+            "count": 1,
+            "id": "gtceu:wrought_iron_dust"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "create:belt_connector"
+        },
+        {
+            "item": "gtceu:silicone_rubber_dust"
+        },
+        {
+            "item": "gtceu:silicone_rubber_dust"
+        },
+        {
+            "item": "gtceu:silicone_rubber_dust"
+        },
+        {
+            "item": "gtceu:silicone_rubber_dust"
+        }
+    ],
+    "result": {
+        "id": "greate_remake:silicone_rubber_belt_connector"
+    }
+}

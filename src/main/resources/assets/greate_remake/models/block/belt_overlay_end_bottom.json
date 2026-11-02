@@ -1,0 +1,7 @@
+{
+  "parent": "create:block/belt/end_bottom",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "1": "greate_remake:block/belt_overlay/empty"
+  }
+}

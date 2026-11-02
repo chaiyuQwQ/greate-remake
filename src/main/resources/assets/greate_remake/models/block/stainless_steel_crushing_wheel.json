@@ -1,0 +1,7 @@
+{
+  "parent": "greate_remake:block/stainless_steel_crushing_wheel_textures",
+  "flip_v": true,
+  "loader": "neoforge:obj",
+  "model": "create:models/block/crushing_wheel/crushing_wheel.obj",
+  "render_type": "minecraft:cutout_mipped"
+}

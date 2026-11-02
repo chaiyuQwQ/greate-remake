@@ -1,0 +1,6 @@
+{
+  "parent": "create:block/belt/particle",
+  "textures": {
+    "particle": "greate_remake:block/polybenzimidazole/belt"
+  }
+}

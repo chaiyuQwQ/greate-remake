@@ -1,0 +1,46 @@
+{
+    "type": "gtceu:cutter",
+    "category": "gtceu:cutter",
+    "duration": 150,
+    "inputs": {
+        "fluid": [
+            {
+                "content": {
+                    "amount": 7,
+                    "ingredient": {
+                        "tag": "c:distilled_water"
+                    }
+                }
+            }
+        ],
+        "item": [
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "item": "create:andesite_alloy"
+                    }
+                }
+            }
+        ]
+    },
+    "outputs": {
+        "item": [
+            {
+                "content": {
+                    "count": 2,
+                    "ingredient": {
+                        "item": "greate_remake:andesite_alloy_shaft"
+                    }
+                }
+            }
+        ]
+    },
+    "tickInputs": {
+        "eu": [
+            {
+                "content": 30
+            }
+        ]
+    }
+}

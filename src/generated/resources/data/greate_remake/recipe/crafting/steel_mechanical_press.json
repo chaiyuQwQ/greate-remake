@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "C": {
+            "item": "create:andesite_casing"
+        },
+        "P": {
+            "item": "gtceu:steel_plate"
+        },
+        "S": {
+            "item": "greate_remake:steel_shaft"
+        }
+    },
+    "pattern": [
+        "P P",
+        "PSP",
+        " C "
+    ],
+    "result": {
+        "id": "greate_remake:steel_mechanical_press"
+    }
+}

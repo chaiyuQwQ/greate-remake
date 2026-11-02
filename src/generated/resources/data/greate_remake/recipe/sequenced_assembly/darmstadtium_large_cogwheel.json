@@ -1,0 +1,48 @@
+{
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+        "item": "greate_remake:darmstadtium_shaft"
+    },
+    "results": [
+        {
+            "id": "greate_remake:large_darmstadtium_cogwheel"
+        }
+    ],
+    "sequence": [
+        {
+            "type": "create:deploying",
+            "ingredients": [
+                {
+                    "item": "greate_remake:darmstadtium_cogwheel"
+                },
+                {
+                    "item": "gtceu:darmstadtium_plate"
+                }
+            ],
+            "results": [
+                {
+                    "id": "greate_remake:darmstadtium_cogwheel"
+                }
+            ]
+        },
+        {
+            "type": "create:deploying",
+            "ingredients": [
+                {
+                    "item": "greate_remake:darmstadtium_cogwheel"
+                },
+                {
+                    "item": "gtceu:darmstadtium_plate"
+                }
+            ],
+            "results": [
+                {
+                    "id": "greate_remake:darmstadtium_cogwheel"
+                }
+            ]
+        }
+    ],
+    "transitional_item": {
+        "id": "greate_remake:darmstadtium_cogwheel"
+    }
+}

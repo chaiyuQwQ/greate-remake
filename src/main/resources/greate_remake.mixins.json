@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "package": "electrolyte.greate.mixin",
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MixinKineticNetwork",
+    "MixinSawBlockEntity",
+    "MixinBeltBlock",
+    "MixinBeltBlockEntityAccessor",
+    "MixinBeltFunnelBlock",
+    "MixinBeltTunnelBlock",
+    "MixinAllArmInteractionPointTypes$BeltType",
+    "MixinAirCurrent",
+    "MixinRecipeManager"
+  ],
+  "client": [
+    "MixinMaterialPipeBlock"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,41 @@
+# 编译冒烟：ubuntu + JDK 21 上跑 gradle build。
+#
+# 说明：
+#   - 依赖走公网 Maven（NeoForge / Create / GTCEu），首次运行约 5-10 分钟；
+#   - GameTest 需要游戏客户端，CI 里不跑，逻辑回归仍靠本地 `runClient -Pgametest` + `/test runall`；
+#   - 数据生成一致性检查依赖仓库内部的维护脚本，不在此仓库内，故 CI 只做编译与打包。
+name: build
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Build
+        run: |
+          chmod +x gradlew
+          ./gradlew build --no-daemon --stacktrace
+
+      - name: Upload jar
+        uses: actions/upload-artifact@v4
+        with:
+          name: greate_remake-jar
+          path: build/libs/*.jar
+          if-no-files-found: error

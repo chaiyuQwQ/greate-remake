@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "gtceu:neutronium_plate"
+        },
+        {
+            "item": "gtceu:neutronium_plate"
+        }
+    ],
+    "result": {
+        "count": 4,
+        "id": "greate_remake:neutronium_shaft"
+    }
+}

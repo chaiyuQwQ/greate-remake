@@ -1,0 +1,54 @@
+{
+    "type": "gtceu:assembler",
+    "category": "gtceu:assembler",
+    "duration": 800,
+    "inputs": {
+        "item": [
+            {
+                "content": {
+                    "count": 5,
+                    "ingredient": {
+                        "tag": "c:plates/iron"
+                    }
+                }
+            },
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "tag": "c:chests/wooden"
+                    }
+                }
+            },
+            {
+                "chance": 0,
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "type": "gtceu:circuit",
+                        "configuration": 10
+                    }
+                }
+            }
+        ]
+    },
+    "outputs": {
+        "item": [
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "item": "minecraft:hopper"
+                    }
+                }
+            }
+        ]
+    },
+    "tickInputs": {
+        "eu": [
+            {
+                "content": 2
+            }
+        ]
+    }
+}

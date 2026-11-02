@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "greate_remake:block/aluminium_mechanical_press",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "greate_remake:block/aluminium_mechanical_press"
+    },
+    "facing=south": {
+      "model": "greate_remake:block/aluminium_mechanical_press",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "greate_remake:block/aluminium_mechanical_press",
+      "y": 270
+    }
+  }
+}

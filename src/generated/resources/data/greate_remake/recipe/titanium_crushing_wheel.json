@@ -1,0 +1,27 @@
+{
+    "type": "create:mechanical_crafting",
+    "accept_mirrored": true,
+    "category": "misc",
+    "key": {
+        "A": {
+            "item": "gtceu:titanium_plate"
+        },
+        "C": {
+            "item": "gtceu:steel_plate"
+        },
+        "S": {
+            "item": "greate_remake:titanium_shaft"
+        }
+    },
+    "pattern": [
+        " AAA ",
+        "AACAA",
+        "ACSCA",
+        "AACAA",
+        " AAA "
+    ],
+    "result": {
+        "count": 2,
+        "id": "greate_remake:titanium_crushing_wheel"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "type": "greate_remake:milling",
+    "circuit_number": 3,
+    "ingredients": [
+        {
+            "item": "greate_remake:steel_millstone"
+        }
+    ],
+    "processing_time": 120,
+    "recipe_tier": 2,
+    "results": [
+        {
+            "chance": 1.0,
+            "count": 1,
+            "id": "gtceu:steel_dust"
+        }
+    ]
+}

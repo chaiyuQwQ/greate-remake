@@ -1,0 +1,7 @@
+{
+  "parent": "create:block/belt/start_bottom",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "1": "greate_remake:block/polytetrafluoroethylene/belt_offset"
+  }
+}

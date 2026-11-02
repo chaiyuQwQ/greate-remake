@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "C": {
+            "item": "create:railway_casing"
+        },
+        "P": {
+            "item": "gtceu:neutronium_plate"
+        },
+        "S": {
+            "item": "greate_remake:neutronium_shaft"
+        }
+    },
+    "pattern": [
+        "P P",
+        "PSP",
+        " C "
+    ],
+    "result": {
+        "id": "greate_remake:neutronium_mechanical_press"
+    }
+}

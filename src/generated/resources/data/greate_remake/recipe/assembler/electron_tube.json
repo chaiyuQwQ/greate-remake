@@ -1,0 +1,62 @@
+{
+    "type": "gtceu:assembler",
+    "category": "gtceu:assembler",
+    "duration": 400,
+    "inputs": {
+        "item": [
+            {
+                "content": {
+                    "count": 2,
+                    "ingredient": {
+                        "item": "gtceu:steel_single_wire"
+                    }
+                }
+            },
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "item": "gtceu:glass_tube"
+                    }
+                }
+            },
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "item": "create:polished_rose_quartz"
+                    }
+                }
+            },
+            {
+                "chance": 0,
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "type": "gtceu:circuit",
+                        "configuration": 1
+                    }
+                }
+            }
+        ]
+    },
+    "outputs": {
+        "item": [
+            {
+                "content": {
+                    "count": 2,
+                    "ingredient": {
+                        "item": "create:electron_tube"
+                    }
+                }
+            }
+        ]
+    },
+    "tickInputs": {
+        "eu": [
+            {
+                "content": 30
+            }
+        ]
+    }
+}

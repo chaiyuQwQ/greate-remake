@@ -1,0 +1,6 @@
+# GT 模型补丁清单（由 tools/patch_gt_models.py 生成，勿手改）
+# 原因：GT 的模型 JSON 仍用 1.20 的 forge_data，1.21 NeoForge 只认 neoforge_data
+gt_version=7.0.2
+patched_files=1
+
+gtceu/models/block/machine/template/generator_machine.json

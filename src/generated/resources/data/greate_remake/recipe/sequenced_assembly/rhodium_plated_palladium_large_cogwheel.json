@@ -1,0 +1,48 @@
+{
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+        "item": "greate_remake:rhodium_plated_palladium_shaft"
+    },
+    "results": [
+        {
+            "id": "greate_remake:large_rhodium_plated_palladium_cogwheel"
+        }
+    ],
+    "sequence": [
+        {
+            "type": "create:deploying",
+            "ingredients": [
+                {
+                    "item": "greate_remake:rhodium_plated_palladium_cogwheel"
+                },
+                {
+                    "item": "gtceu:rhodium_plated_palladium_plate"
+                }
+            ],
+            "results": [
+                {
+                    "id": "greate_remake:rhodium_plated_palladium_cogwheel"
+                }
+            ]
+        },
+        {
+            "type": "create:deploying",
+            "ingredients": [
+                {
+                    "item": "greate_remake:rhodium_plated_palladium_cogwheel"
+                },
+                {
+                    "item": "gtceu:rhodium_plated_palladium_plate"
+                }
+            ],
+            "results": [
+                {
+                    "id": "greate_remake:rhodium_plated_palladium_cogwheel"
+                }
+            ]
+        }
+    ],
+    "transitional_item": {
+        "id": "greate_remake:rhodium_plated_palladium_cogwheel"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "type": "greate_remake:sawing",
+    "ingredients": [
+        {
+            "item": "gtceu:aluminium_ingot"
+        }
+    ],
+    "processing_time": 50,
+    "recipe_tier": 2,
+    "results": [
+        {
+            "count": 2,
+            "id": "gtceu:aluminium_rod"
+        }
+    ]
+}

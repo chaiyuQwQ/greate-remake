@@ -1,0 +1,7 @@
+{
+  "parent": "create:block/belt/start",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "0": "greate_remake:block/polytetrafluoroethylene/belt"
+  }
+}

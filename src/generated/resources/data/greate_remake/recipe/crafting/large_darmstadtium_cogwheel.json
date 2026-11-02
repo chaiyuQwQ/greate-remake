@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "greate_remake:darmstadtium_cogwheel"
+        },
+        {
+            "item": "gtceu:darmstadtium_plate"
+        },
+        {
+            "item": "gtceu:darmstadtium_plate"
+        }
+    ],
+    "result": {
+        "id": "greate_remake:large_darmstadtium_cogwheel"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "C": {
+            "item": "create:copper_casing"
+        },
+        "P": {
+            "item": "gtceu:titanium_plate"
+        },
+        "S": {
+            "item": "greate_remake:titanium_shaft"
+        }
+    },
+    "pattern": [
+        " P ",
+        "PCP",
+        " S "
+    ],
+    "result": {
+        "id": "greate_remake:titanium_encased_fan"
+    }
+}

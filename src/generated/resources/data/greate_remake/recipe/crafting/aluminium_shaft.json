@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "gtceu:aluminium_plate"
+        },
+        {
+            "item": "gtceu:aluminium_plate"
+        }
+    ],
+    "result": {
+        "count": 4,
+        "id": "greate_remake:aluminium_shaft"
+    }
+}

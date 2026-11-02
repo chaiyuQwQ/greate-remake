@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "A": {
+            "item": "greate_remake:darmstadtium_cogwheel"
+        },
+        "H": {
+            "item": "create:railway_casing"
+        },
+        "S": {
+            "item": "greate_remake:darmstadtium_shaft"
+        },
+        "W": {
+            "tag": "minecraft:wooden_slabs"
+        }
+    },
+    "pattern": [
+        " A ",
+        "WHW",
+        " S "
+    ],
+    "result": {
+        "id": "greate_remake:darmstadtium_millstone"
+    }
+}

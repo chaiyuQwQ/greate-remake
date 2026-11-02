@@ -1,0 +1,17 @@
+{
+    "type": "greate_remake:milling",
+    "ingredients": [
+        {
+            "item": "create:brass_ingot"
+        }
+    ],
+    "processing_time": 100,
+    "recipe_tier": 3,
+    "results": [
+        {
+            "chance": 1.0,
+            "count": 1,
+            "id": "gtceu:brass_dust"
+        }
+    ]
+}

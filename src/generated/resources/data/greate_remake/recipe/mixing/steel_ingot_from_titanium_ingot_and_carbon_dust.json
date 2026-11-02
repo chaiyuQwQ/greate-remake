@@ -1,0 +1,21 @@
+{
+    "type": "greate_remake:mixing",
+    "heat_requirement": "heated",
+    "ingredients": [
+        {
+            "count": 1,
+            "item": "gtceu:titanium_ingot"
+        },
+        {
+            "item": "gtceu:carbon_dust"
+        }
+    ],
+    "processing_time": 300,
+    "recipe_tier": 3,
+    "results": [
+        {
+            "count": 1,
+            "id": "gtceu:steel_ingot"
+        }
+    ]
+}

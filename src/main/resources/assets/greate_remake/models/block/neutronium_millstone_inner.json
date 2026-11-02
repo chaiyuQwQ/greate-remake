@@ -1,0 +1,9 @@
+{
+  "parent": "create:block/millstone/inner",
+  "textures": {
+    "1_0": "greate_remake:block/neutronium/axis",
+    "1_1": "greate_remake:block/neutronium/axis_top",
+    "5": "greate_remake:block/neutronium/millstone",
+    "particle": "greate_remake:block/neutronium/axis"
+  }
+}

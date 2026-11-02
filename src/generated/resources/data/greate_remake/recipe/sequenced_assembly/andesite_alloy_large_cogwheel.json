@@ -1,0 +1,48 @@
+{
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+        "item": "greate_remake:andesite_alloy_shaft"
+    },
+    "results": [
+        {
+            "id": "greate_remake:large_andesite_alloy_cogwheel"
+        }
+    ],
+    "sequence": [
+        {
+            "type": "create:deploying",
+            "ingredients": [
+                {
+                    "item": "greate_remake:andesite_alloy_cogwheel"
+                },
+                {
+                    "item": "create:andesite_alloy"
+                }
+            ],
+            "results": [
+                {
+                    "id": "greate_remake:andesite_alloy_cogwheel"
+                }
+            ]
+        },
+        {
+            "type": "create:deploying",
+            "ingredients": [
+                {
+                    "item": "greate_remake:andesite_alloy_cogwheel"
+                },
+                {
+                    "item": "create:andesite_alloy"
+                }
+            ],
+            "results": [
+                {
+                    "id": "greate_remake:andesite_alloy_cogwheel"
+                }
+            ]
+        }
+    ],
+    "transitional_item": {
+        "id": "greate_remake:andesite_alloy_cogwheel"
+    }
+}

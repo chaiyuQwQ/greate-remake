@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "greate_remake:rhodium_plated_palladium_cogwheel"
+        },
+        {
+            "item": "greate_remake:rhodium_plated_palladium_cogwheel"
+        },
+        {
+            "item": "gtceu:rhodium_plated_palladium_plate"
+        },
+        {
+            "item": "gtceu:rhodium_plated_palladium_plate"
+        },
+        {
+            "item": "gtceu:rhodium_plated_palladium_plate"
+        },
+        {
+            "item": "gtceu:rhodium_plated_palladium_plate"
+        }
+    ],
+    "result": {
+        "id": "greate_remake:rhodium_plated_palladium_crushing_wheel"
+    }
+}

@@ -1,0 +1,264 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'idea'
+    id 'net.neoforged.moddev' version '2.0.120'
+}
+
+version = mod_version
+group = mod_group_id
+base { archivesName = mod_id }
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = project.neo_version
+
+    parchment {
+        mappingsVersion = project.parchment_mappings_version
+        minecraftVersion = project.parchment_minecraft_version
+    }
+
+    runs {
+        client {
+            client()
+            gameDirectory = project.file("run/client")
+            // 直接进已有存档，省去每次手动点菜单（仅便于开发验证，可删）
+            if (project.hasProperty('quickplay')) {
+                programArguments.addAll '--quickPlaySingleplayer', project.property('quickplay')
+            }
+            // GameTest 走客户端集成服：GT 7.0.2 在 dev 专用服务端会因 dist 校验加载 ClientLevel 崩溃
+            // （runGameTestServer 不可用，见 docs/上游问题与补丁.md）。带 -Pgametest 启动后，
+            // 进世界执行 /test runall 即可跑 GameTest。
+            if (project.hasProperty('gametest')) {
+                systemProperty 'neoforge.enableGameTest', 'true'
+                systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+            }
+        }
+        server {
+            server()
+            gameDirectory = project.file("run/server")
+        }
+        // 数据生成：产物直接写回 src/generated/resources，与原仓库结构一致
+        data {
+            data()
+            gameDirectory = project.file("run/data")
+            programArguments.addAll '--all',
+                    '--mod', project.mod_id,
+                    '--output', file('src/generated/resources/').getAbsolutePath(),
+                    '--existing', file('src/main/resources/').getAbsolutePath(),
+                    '--existing-mod', 'create',
+                    '--existing-mod', 'gtceu'
+        }
+        // GameTest（原仓库已配置但从未使用）
+        gameTestServer {
+            type = 'gameTestServer'
+            gameDirectory = project.file("run/gametest")
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+    }
+
+    mods {
+        "${mod_id}" { sourceSet(sourceSets.main) }
+    }
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+// 翻译键统一由 tools/gen_lang.py 维护在 src/main/resources/assets/greate_remake/lang/（7 种语言）。
+// 但 GT/Registrate 的 LANG provider 仍会给所有 entry 自动生成 en_us/en_ud（它注册在
+// ProviderType 的全局表里，没法关），与手写文件同名 → jar 里会出现重复条目、且生成侧
+// 只有英文会盖掉手写文案。所以 datagen 结束后把生成侧清掉；手写的那份才是唯一来源。
+tasks.register('removeGeneratedLang', Delete) {
+    delete file('src/generated/resources/assets/greate_remake/lang')
+}
+tasks.matching { it.name == 'runData' }.configureEach {
+    finalizedBy 'removeGeneratedLang'
+}
+
+configurations {
+    runtimeClasspath.extendsFrom localRuntime
+}
+
+repositories {
+    mavenCentral()
+
+    // Registrate（Create 与 GTCEu 共用）
+    maven { url = 'https://mvn.devos.one/snapshots/'
+        content { includeGroup 'com.tterrag.registrate' } }
+
+    // Create / Ponder / Flywheel
+    maven { url = 'https://maven.createmod.net'
+        content {
+            includeGroup 'com.simibubi.create'
+            includeGroup 'net.createmod.ponder'
+            includeGroup 'dev.engine-room.flywheel'
+            includeGroup 'dev.engine-room.vanillin'
+        } }
+
+    // GregTech CEu 与本体重制版
+    maven { url = 'https://maven.gtceu.com'
+        content { includeGroup 'com.gregtechceu.gtceu' } }
+    maven { url = 'https://maven.firstdarkdev.xyz/snapshots'
+        content { includeGroup 'com.lowdragmc.ldlib' } }
+
+    // GT 的配置文件库
+    maven { url = 'https://repo.repsy.io/mvn/toma/public/'
+        content { includeGroup 'dev.toma.configuration' } }
+
+    // JEI
+    maven { url = 'https://maven.blamejared.com'
+        content { includeGroup 'mezz.jei' } }
+
+    maven { url = 'https://maven.parchmentmc.org' }
+    maven { url = 'https://maven.neoforged.net/releases' }
+}
+
+dependencies {
+    // ---------- Create 6.0.10 ----------
+    implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
+    implementation "net.createmod.ponder:ponder-neoforge:${ponder_version}"
+    compileOnly "dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}"
+    runtimeOnly "dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}"
+    implementation "com.tterrag.registrate:Registrate:${registrate_version}"
+
+    // ---------- GregTech CEu 7.0.2 ----------
+    implementation("com.gregtechceu.gtceu:gtceu-${minecraft_version}:${gregtech_version}") { transitive = false }
+    implementation "com.lowdragmc.ldlib:ldlib-neoforge-${minecraft_version}:${gtceu_ldlib_version}"
+    implementation "dev.toma.configuration:configuration-${minecraft_version}:${gtceu_configuration_version}"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:2.0.21"
+
+    // ---------- 开发期可选 ----------
+    compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
+    compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
+    runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
+
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:${mixin_extras_version}"))
+    implementation "io.github.llamalad7:mixinextras-neoforge:${mixin_extras_version}"
+}
+
+// 生成 META-INF/neoforge.mods.toml（从 src/main/templates 展开变量）
+var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
+    var replaceProperties = [
+            minecraft_version      : minecraft_version,
+            minecraft_version_range: minecraft_version_range,
+            neo_version            : neo_version,
+            neo_version_range      : neo_version_range,
+            loader_version_range   : loader_version_range,
+            mod_id                 : mod_id,
+            mod_name               : mod_name,
+            mod_license            : mod_license,
+            mod_version            : mod_version,
+            mod_authors            : mod_authors,
+            mod_description        : mod_description,
+            create_version_range   : create_version_range,
+            gregtech_version_range : gregtech_version_range,
+    ]
+    inputs.properties replaceProperties
+    expand replaceProperties
+    from "src/main/templates"
+    into "build/generated/sources/modMetadata"
+}
+sourceSets.main.resources.srcDir generateModMetadata
+neoForge.ideSyncTask generateModMetadata
+
+// 目录占位文件不进 jar
+processResources {
+    exclude('.gitkeep')
+    // 万一 removeGeneratedLang 没跑到（例如 datagen 中途崩溃）留下了生成侧 lang，
+    // 让 src/main/resources 的那份优先，而不是让构建直接失败在「重复条目」上。
+    // srcDir 顺序：src/main/resources → src/generated/resources，EXCLUDE 保留第一个。
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+idea { module { downloadSources = true; downloadJavadoc = true } }
+
+// ---------------------------------------------------------------------------
+// 运行任务的 JVM 参数
+//
+// 注意：moddev 2.0.120 的 `runs { configureEach { jvmArgument ... } }` 实测未生效
+// （启动命令里没有 -Xmx），因此直接配置到 JavaExec 任务上。
+// RunGameTask extends JavaExec，jvmArgs 一定生效。
+// 不给参数时游戏走 JVM 默认堆（物理内存 1/4），且 Gradle daemon 仍在占用内存，
+// 16G 机器上容易卡顿。
+// ---------------------------------------------------------------------------
+def gameJvmArgs = [
+        '-Xms1G',
+        '-Xmx4G',
+        '-XX:+UseG1GC',
+        '-XX:MaxGCPauseMillis=200',
+        '-XX:+ParallelRefProcEnabled',
+        // 不加 -XX:+AlwaysPreTouch：它会在启动时把 4G 堆全部实体化，
+        // 与常驻的 2G Gradle daemon 叠加后，16G 机器容易触发系统换页，
+        // 反而在启动期更卡；对稳定后的帧率也没有收益。
+        '-Dfile.encoding=UTF-8',
+]
+
+tasks.matching { it.name in ['runClient', 'runServer', 'runData', 'runGameTestServer'] }
+        .configureEach { task ->
+            if (task instanceof JavaExec) {
+                task.jvmArgs(gameJvmArgs)
+            }
+        }
+
+// ---------------------------------------------------------------------------
+// 开发客户端渲染调优（runClient 前自动执行）
+//
+// 症状：标题界面就卡到不足 1 帧，进不去游戏。
+//
+// 根因（jstack 采样渲染线程定位）：
+//   GTCEu 7.0.2 的 jar 里有 721 个 .png.mcmeta，其中 532 个带 animation 段
+//   （92 个 frametime=1、208 个 frametime=2）。每 tick 的
+//   TextureAtlas.cycleAnimationFrames() 会把这些动画 sprite 逐个用
+//   glTexSubImage2D 传到 2048x2048 的 blocks 图集。
+//   当 mipmapLevels > 0 时，Intel 核显驱动（本机为 2022-01 的 30.0.101.1368）
+//   在每次上传后都要重建 mip 链，CPU 侧同步等待 GPU，导致
+//   Minecraft.tick() → TextureManager.tick() → TextureAtlas.tick() 单次耗时
+//   超过 1 秒，帧完全推不动。
+//
+// A/B 实测（同一台机器，各采样 8 次渲染线程栈）：
+//   mipmapLevels=4 → 8/8 次全部阻塞在 GL11C.nglTexSubImage2D
+//   mipmapLevels=0 → 8/8 次落在 glfwSwapBuffers / glUniform / glBufferData 等
+//                    正常帧提交路径，游戏可正常进入世界
+//
+// 另外关掉垂直同步：vsync 会把每次上传的等待放大成整帧等待。
+//
+// ⚠️ mipmapLevels=0 的代价是远处方块会闪烁（丢失 mipmap 抗锯齿）。
+//    把 Intel 驱动升到 31.x/32.x 之后可以试着调回 4 复测；
+//    若已升级且不卡，本任务把 mipmapLevels 改回 4 即可。
+// ---------------------------------------------------------------------------
+var tuneClient = tasks.register('tuneClient') {
+    group = 'minecraft'
+    description = '把 run/client/options.txt 的渲染选项调到核显可用的值'
+
+    doLast {
+        def f = project.file('run/client/options.txt')
+        if (!f.exists()) {
+            logger.lifecycle('[tuneClient] options.txt 尚未生成，跳过（首次 runClient 后会自动创建）')
+            return
+        }
+        // key -> 期望值
+        def want = [mipmapLevels: '0', enableVsync: 'false', maxFps: '60']
+        def text = f.getText('UTF-8')
+        def changed = []
+        want.each { k, v ->
+            def re = java.util.regex.Pattern.compile('(?m)^' + k + ':(.*)$')
+            def m = re.matcher(text)
+            if (m.find() && m.group(1).trim() != v) {
+                def cur = m.group(1).trim()
+                text = m.replaceFirst(k + ':' + v)
+                changed << (k + ' ' + cur + ' -> ' + v)
+            }
+        }
+        if (!changed.isEmpty()) {
+            f.setText(text, 'UTF-8')
+            changed.each { logger.lifecycle('[tuneClient] ' + it) }
+        }
+    }
+}
+
+tasks.matching { it.name == 'runClient' }.configureEach { dependsOn(tuneClient) }

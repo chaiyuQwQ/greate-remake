@@ -1,0 +1,143 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "net.neoforged",
+    "module": "neoform-runtime",
+    "version": "1.0.43",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "neoform-runtime-1.0.43.jar",
+          "url": "neoform-runtime-1.0.43.jar"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "neoform-runtime-1.0.43.jar",
+          "url": "neoform-runtime-1.0.43.jar"
+        }
+      ]
+    },
+    {
+      "name": "shadowRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "shadowed",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "neoform-runtime-1.0.43-all.jar",
+          "url": "neoform-runtime-1.0.43-all.jar"
+        }
+      ]
+    },
+    {
+      "name": "externalTools",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.codechicken",
+          "module": "DiffPatch",
+          "version": {
+            "requires": "2.0.0.36"
+          },
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "DiffPatch",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "all"
+            }
+          }
+        },
+        {
+          "group": "net.neoforged",
+          "module": "AutoRenamingTool",
+          "version": {
+            "requires": "2.0.17"
+          },
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "AutoRenamingTool",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "all"
+            }
+          }
+        },
+        {
+          "group": "net.neoforged.jst",
+          "module": "jst-cli-bundle",
+          "version": {
+            "requires": "2.0.11"
+          }
+        },
+        {
+          "group": "net.minecraftforge",
+          "module": "mergetool",
+          "version": {
+            "requires": "1.1.7"
+          },
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "mergetool",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "fatjar"
+            }
+          }
+        },
+        {
+          "group": "net.neoforged.installertools",
+          "module": "installertools",
+          "version": {
+            "requires": "4.0.12"
+          },
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "installertools",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "fatjar"
+            }
+          }
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "net.neoforged",
+          "name": "neoform-runtime-external-tools",
+          "version": "1.0.43"
+        }
+      ]
+    }
+  ]
+}

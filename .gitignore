@@ -1,0 +1,24 @@
+# ---- Gradle / IDE ----
+.gradle/
+build/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ---- 开发运行目录：存档 / 日志 / 崩溃报告（体积大、随时可重建） ----
+run/
+
+# ---- 本地暂存的 Maven 仓库（按需生成，不入库） ----
+local-staging/local-maven/
+
+# ---- datagen 本地缓存（runData 可重建） ----
+src/generated/resources/.cache/
+
+# ---- Python 字节码缓存 ----
+__pycache__/
+*.pyc
+
+# ---- 系统 ----
+.DS_Store
+Thumbs.db

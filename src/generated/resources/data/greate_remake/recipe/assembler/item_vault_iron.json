@@ -1,0 +1,62 @@
+{
+    "type": "gtceu:assembler",
+    "category": "gtceu:assembler",
+    "duration": 400,
+    "inputs": {
+        "item": [
+            {
+                "content": {
+                    "count": 2,
+                    "ingredient": {
+                        "tag": "c:screws/iron"
+                    }
+                }
+            },
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "item": "gtceu:wood_crate"
+                    }
+                }
+            },
+            {
+                "content": {
+                    "count": 2,
+                    "ingredient": {
+                        "tag": "c:plates/iron"
+                    }
+                }
+            },
+            {
+                "chance": 0,
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "type": "gtceu:circuit",
+                        "configuration": 1
+                    }
+                }
+            }
+        ]
+    },
+    "outputs": {
+        "item": [
+            {
+                "content": {
+                    "count": 2,
+                    "ingredient": {
+                        "item": "create:item_vault"
+                    }
+                }
+            }
+        ]
+    },
+    "tickInputs": {
+        "eu": [
+            {
+                "content": 30
+            }
+        ]
+    }
+}

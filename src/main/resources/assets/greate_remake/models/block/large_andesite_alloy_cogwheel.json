@@ -1,0 +1,9 @@
+{
+  "parent": "create:block/large_cogwheel",
+  "textures": {
+    "0": "greate_remake:block/andesite_alloy/cogwheel_axis",
+    "3": "greate_remake:block/andesite_alloy/axis_top",
+    "4": "greate_remake:block/andesite_alloy/large_cogwheel",
+    "particle": "greate_remake:block/andesite_alloy/large_cogwheel"
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "type": "greate_remake:pressing",
+    "ingredients": [
+        {
+            "item": "gtceu:steel_ingot"
+        }
+    ],
+    "recipe_tier": 1,
+    "results": [
+        {
+            "count": 1,
+            "id": "gtceu:steel_plate"
+        }
+    ]
+}

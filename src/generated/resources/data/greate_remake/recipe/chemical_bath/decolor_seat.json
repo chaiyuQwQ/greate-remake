@@ -1,0 +1,46 @@
+{
+    "type": "gtceu:chemical_bath",
+    "category": "gtceu:chemical_bath",
+    "duration": 400,
+    "inputs": {
+        "fluid": [
+            {
+                "content": {
+                    "amount": 20,
+                    "ingredient": {
+                        "tag": "c:chlorine"
+                    }
+                }
+            }
+        ],
+        "item": [
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "tag": "create:seats"
+                    }
+                }
+            }
+        ]
+    },
+    "outputs": {
+        "item": [
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "item": "create:white_seat"
+                    }
+                }
+            }
+        ]
+    },
+    "tickInputs": {
+        "eu": [
+            {
+                "content": 2
+            }
+        ]
+    }
+}

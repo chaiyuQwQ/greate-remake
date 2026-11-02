@@ -1,0 +1,7 @@
+{
+  "parent": "create:block/mechanical_pump/block",
+  "textures": {
+    "4": "greate_remake:block/titanium/pump",
+    "particle": "greate_remake:block/titanium/pump"
+  }
+}

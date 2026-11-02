@@ -1,0 +1,46 @@
+{
+    "type": "gtceu:chemical_bath",
+    "category": "gtceu:chemical_bath",
+    "duration": 20,
+    "inputs": {
+        "fluid": [
+            {
+                "content": {
+                    "amount": 1000,
+                    "ingredient": {
+                        "tag": "c:purple_dye"
+                    }
+                }
+            }
+        ],
+        "item": [
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "tag": "create:valve_handles"
+                    }
+                }
+            }
+        ]
+    },
+    "outputs": {
+        "item": [
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "item": "create:purple_valve_handle"
+                    }
+                }
+            }
+        ]
+    },
+    "tickInputs": {
+        "eu": [
+            {
+                "content": 30
+            }
+        ]
+    }
+}

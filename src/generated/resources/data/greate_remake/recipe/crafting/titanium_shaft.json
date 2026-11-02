@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "gtceu:titanium_plate"
+        },
+        {
+            "item": "gtceu:titanium_plate"
+        }
+    ],
+    "result": {
+        "count": 4,
+        "id": "greate_remake:titanium_shaft"
+    }
+}

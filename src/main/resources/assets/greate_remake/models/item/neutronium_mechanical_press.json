@@ -1,0 +1,10 @@
+{
+  "parent": "create:block/mechanical_press/item",
+  "textures": {
+    "0": "greate_remake:block/neutronium/axis",
+    "1": "greate_remake:block/neutronium/axis_top",
+    "8": "greate_remake:block/mechanical_press_side",
+    "mechanical_press_head": "greate_remake:block/neutronium/mechanical_press_head",
+    "particle": "greate_remake:block/mechanical_press_side"
+  }
+}

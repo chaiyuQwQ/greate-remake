@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "gtceu:rhodium_plated_palladium_plate"
+        },
+        {
+            "item": "gtceu:rhodium_plated_palladium_plate"
+        }
+    ],
+    "result": {
+        "count": 4,
+        "id": "greate_remake:rhodium_plated_palladium_shaft"
+    }
+}

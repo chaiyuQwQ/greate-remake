@@ -1,0 +1,46 @@
+{
+    "type": "gtceu:chemical_bath",
+    "category": "gtceu:chemical_bath",
+    "duration": 400,
+    "inputs": {
+        "fluid": [
+            {
+                "content": {
+                    "amount": 20,
+                    "ingredient": {
+                        "tag": "c:chlorine"
+                    }
+                }
+            }
+        ],
+        "item": [
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "tag": "create:valve_handles"
+                    }
+                }
+            }
+        ]
+    },
+    "outputs": {
+        "item": [
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "item": "create:copper_valve_handle"
+                    }
+                }
+            }
+        ]
+    },
+    "tickInputs": {
+        "eu": [
+            {
+                "content": 2
+            }
+        ]
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "type": "gtceu:cutter",
+    "category": "gtceu:cutter",
+    "duration": 100,
+    "inputs": {
+        "fluid": [
+            {
+                "content": {
+                    "amount": 2,
+                    "ingredient": {
+                        "tag": "c:lubricant"
+                    }
+                }
+            }
+        ],
+        "item": [
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "item": "gtceu:neutronium_plate"
+                    }
+                }
+            }
+        ]
+    },
+    "outputs": {
+        "item": [
+            {
+                "content": {
+                    "count": 2,
+                    "ingredient": {
+                        "item": "greate_remake:neutronium_shaft"
+                    }
+                }
+            }
+        ]
+    },
+    "tickInputs": {
+        "eu": [
+            {
+                "content": 30
+            }
+        ]
+    }
+}

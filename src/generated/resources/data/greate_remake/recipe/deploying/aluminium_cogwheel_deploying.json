@@ -1,0 +1,16 @@
+{
+    "type": "create:deploying",
+    "ingredients": [
+        {
+            "item": "greate_remake:aluminium_shaft"
+        },
+        {
+            "item": "gtceu:aluminium_plate"
+        }
+    ],
+    "results": [
+        {
+            "id": "greate_remake:aluminium_cogwheel"
+        }
+    ]
+}

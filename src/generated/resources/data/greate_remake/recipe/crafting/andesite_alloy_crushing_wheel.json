@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "greate_remake:andesite_alloy_cogwheel"
+        },
+        {
+            "item": "greate_remake:andesite_alloy_cogwheel"
+        },
+        {
+            "item": "create:andesite_alloy"
+        },
+        {
+            "item": "create:andesite_alloy"
+        },
+        {
+            "item": "create:andesite_alloy"
+        },
+        {
+            "item": "create:andesite_alloy"
+        }
+    ],
+    "result": {
+        "id": "greate_remake:andesite_alloy_crushing_wheel"
+    }
+}

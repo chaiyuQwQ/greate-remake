@@ -1,0 +1,16 @@
+{
+    "type": "create:deploying",
+    "ingredients": [
+        {
+            "item": "greate_remake:steel_cogwheel"
+        },
+        {
+            "item": "gtceu:steel_plate"
+        }
+    ],
+    "results": [
+        {
+            "id": "greate_remake:large_steel_cogwheel"
+        }
+    ]
+}

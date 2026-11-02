@@ -1,0 +1,7 @@
+{
+  "parent": "create:block/belt_pulley",
+  "textures": {
+    "0": "greate_remake:block/neutronium/axis",
+    "1": "greate_remake:block/neutronium/axis_top"
+  }
+}

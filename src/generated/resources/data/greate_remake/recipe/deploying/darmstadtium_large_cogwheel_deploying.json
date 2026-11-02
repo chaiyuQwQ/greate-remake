@@ -1,0 +1,16 @@
+{
+    "type": "create:deploying",
+    "ingredients": [
+        {
+            "item": "greate_remake:darmstadtium_cogwheel"
+        },
+        {
+            "item": "gtceu:darmstadtium_plate"
+        }
+    ],
+    "results": [
+        {
+            "id": "greate_remake:large_darmstadtium_cogwheel"
+        }
+    ]
+}

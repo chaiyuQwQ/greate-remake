@@ -1,0 +1,48 @@
+{
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+        "item": "greate_remake:neutronium_shaft"
+    },
+    "results": [
+        {
+            "id": "greate_remake:large_neutronium_cogwheel"
+        }
+    ],
+    "sequence": [
+        {
+            "type": "create:deploying",
+            "ingredients": [
+                {
+                    "item": "greate_remake:neutronium_cogwheel"
+                },
+                {
+                    "item": "gtceu:neutronium_plate"
+                }
+            ],
+            "results": [
+                {
+                    "id": "greate_remake:neutronium_cogwheel"
+                }
+            ]
+        },
+        {
+            "type": "create:deploying",
+            "ingredients": [
+                {
+                    "item": "greate_remake:neutronium_cogwheel"
+                },
+                {
+                    "item": "gtceu:neutronium_plate"
+                }
+            ],
+            "results": [
+                {
+                    "id": "greate_remake:neutronium_cogwheel"
+                }
+            ]
+        }
+    ],
+    "transitional_item": {
+        "id": "greate_remake:neutronium_cogwheel"
+    }
+}

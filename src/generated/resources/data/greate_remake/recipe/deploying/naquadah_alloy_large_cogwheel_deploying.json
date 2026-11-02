@@ -1,0 +1,16 @@
+{
+    "type": "create:deploying",
+    "ingredients": [
+        {
+            "item": "greate_remake:naquadah_alloy_cogwheel"
+        },
+        {
+            "item": "gtceu:naquadah_alloy_plate"
+        }
+    ],
+    "results": [
+        {
+            "id": "greate_remake:large_naquadah_alloy_cogwheel"
+        }
+    ]
+}

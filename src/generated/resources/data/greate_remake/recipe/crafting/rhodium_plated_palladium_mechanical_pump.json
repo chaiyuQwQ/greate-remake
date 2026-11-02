@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "C": {
+            "item": "create:brass_casing"
+        },
+        "P": {
+            "item": "gtceu:rhodium_plated_palladium_plate"
+        },
+        "S": {
+            "item": "greate_remake:rhodium_plated_palladium_shaft"
+        }
+    },
+    "pattern": [
+        "P P",
+        "SCS",
+        " P "
+    ],
+    "result": {
+        "id": "greate_remake:rhodium_plated_palladium_mechanical_pump"
+    }
+}

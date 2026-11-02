@@ -1,0 +1,21 @@
+{
+    "type": "greate_remake:mixing",
+    "heat_requirement": "none",
+    "ingredients": [
+        {
+            "count": 2,
+            "item": "minecraft:copper_ingot"
+        },
+        {
+            "item": "gtceu:zinc_ingot"
+        }
+    ],
+    "processing_time": 160,
+    "recipe_tier": 2,
+    "results": [
+        {
+            "count": 3,
+            "id": "gtceu:brass_ingot"
+        }
+    ]
+}

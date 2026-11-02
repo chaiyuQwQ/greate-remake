@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <groupId>net.neoforged</groupId>
+  <artifactId>neoform-runtime</artifactId>
+  <version>1.0.43</version>
+  <packaging>jar</packaging>
+  <description>NeoForm Runtime (local staging of neoform-runtime-1.0.43-all.jar)</description>
+</project>

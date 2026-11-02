@@ -1,0 +1,16 @@
+{
+    "type": "create:deploying",
+    "ingredients": [
+        {
+            "item": "greate_remake:rhodium_plated_palladium_shaft"
+        },
+        {
+            "item": "gtceu:rhodium_plated_palladium_plate"
+        }
+    ],
+    "results": [
+        {
+            "id": "greate_remake:rhodium_plated_palladium_cogwheel"
+        }
+    ]
+}

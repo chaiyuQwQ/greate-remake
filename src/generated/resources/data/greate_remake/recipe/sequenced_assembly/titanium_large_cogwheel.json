@@ -1,0 +1,48 @@
+{
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+        "item": "greate_remake:titanium_shaft"
+    },
+    "results": [
+        {
+            "id": "greate_remake:large_titanium_cogwheel"
+        }
+    ],
+    "sequence": [
+        {
+            "type": "create:deploying",
+            "ingredients": [
+                {
+                    "item": "greate_remake:titanium_cogwheel"
+                },
+                {
+                    "item": "gtceu:titanium_plate"
+                }
+            ],
+            "results": [
+                {
+                    "id": "greate_remake:titanium_cogwheel"
+                }
+            ]
+        },
+        {
+            "type": "create:deploying",
+            "ingredients": [
+                {
+                    "item": "greate_remake:titanium_cogwheel"
+                },
+                {
+                    "item": "gtceu:titanium_plate"
+                }
+            ],
+            "results": [
+                {
+                    "id": "greate_remake:titanium_cogwheel"
+                }
+            ]
+        }
+    ],
+    "transitional_item": {
+        "id": "greate_remake:titanium_cogwheel"
+    }
+}

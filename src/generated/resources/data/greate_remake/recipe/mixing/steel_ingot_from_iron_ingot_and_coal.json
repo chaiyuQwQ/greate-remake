@@ -1,0 +1,21 @@
+{
+    "type": "greate_remake:mixing",
+    "heat_requirement": "heated",
+    "ingredients": [
+        {
+            "count": 2,
+            "item": "minecraft:iron_ingot"
+        },
+        {
+            "item": "minecraft:coal"
+        }
+    ],
+    "processing_time": 200,
+    "recipe_tier": 1,
+    "results": [
+        {
+            "count": 1,
+            "id": "gtceu:steel_ingot"
+        }
+    ]
+}

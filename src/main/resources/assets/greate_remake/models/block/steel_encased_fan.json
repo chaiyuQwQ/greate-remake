@@ -1,0 +1,4 @@
+{
+  "parent": "create:block/encased_fan/block",
+  "render_type": "minecraft:cutout_mipped"
+}

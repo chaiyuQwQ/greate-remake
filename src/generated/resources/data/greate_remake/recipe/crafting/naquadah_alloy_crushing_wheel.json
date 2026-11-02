@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "greate_remake:naquadah_alloy_cogwheel"
+        },
+        {
+            "item": "greate_remake:naquadah_alloy_cogwheel"
+        },
+        {
+            "item": "gtceu:naquadah_alloy_plate"
+        },
+        {
+            "item": "gtceu:naquadah_alloy_plate"
+        },
+        {
+            "item": "gtceu:naquadah_alloy_plate"
+        },
+        {
+            "item": "gtceu:naquadah_alloy_plate"
+        }
+    ],
+    "result": {
+        "id": "greate_remake:naquadah_alloy_crushing_wheel"
+    }
+}

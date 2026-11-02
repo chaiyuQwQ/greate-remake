@@ -1,0 +1,46 @@
+{
+    "type": "gtceu:chemical_bath",
+    "category": "gtceu:chemical_bath",
+    "duration": 20,
+    "inputs": {
+        "fluid": [
+            {
+                "content": {
+                    "amount": 1000,
+                    "ingredient": {
+                        "tag": "c:magenta_dye"
+                    }
+                }
+            }
+        ],
+        "item": [
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "tag": "create:seats"
+                    }
+                }
+            }
+        ]
+    },
+    "outputs": {
+        "item": [
+            {
+                "content": {
+                    "count": 1,
+                    "ingredient": {
+                        "item": "create:magenta_seat"
+                    }
+                }
+            }
+        ]
+    },
+    "tickInputs": {
+        "eu": [
+            {
+                "content": 30
+            }
+        ]
+    }
+}

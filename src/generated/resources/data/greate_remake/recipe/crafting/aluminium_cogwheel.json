@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "greate_remake:aluminium_shaft"
+        },
+        {
+            "item": "gtceu:aluminium_plate"
+        },
+        {
+            "item": "gtceu:aluminium_plate"
+        }
+    ],
+    "result": {
+        "id": "greate_remake:aluminium_cogwheel"
+    }
+}
