@@ -33,7 +33,7 @@
 
 ### 验证
 
-- GameTest 32/32 通过（`runClient -Pgametest` + `/test runall`）。
+- 开发期 GameTest 32/32 通过（测试代码与测试结构为开发期资产，不随公开仓库发布）。
 - `tools/ci_smoke.py` 七项全绿：语言 278 键 × 7、3180 模型 / 1489 贴图、GT 模型补丁、
   Ponder 结构与译文、`build`、`runData` 一致性。
 

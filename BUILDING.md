@@ -16,7 +16,6 @@ export JAVA_HOME=/path/to/jdk-21
 ./gradlew runClient     # 启动客户端
 ./gradlew runServer     # 启动服务端
 ./gradlew runData       # 数据生成 → src/generated/resources/
-./gradlew runGameTestServer   # GameTest（原仓库配了但从未使用）
 ./gradlew build         # 产出 build/libs/greate_remake-0.1.0.jar
 
 # 调试用：跳过主菜单直接进存档（"New World" 换成你的存档文件夹名）
@@ -274,7 +273,7 @@ GT 的机器贴图（`overlay_front_active`、`overlay_side_active` 等）是逐
 **注意不要写在 `runs {}` 里**：moddev 2.0.120 的 `runs { configureEach { jvmArgument '...' } }` 是无效的——不报错，但实际启动命令里一个 `-Xmx` 都没有。`RunGameTask` 继承 `JavaExec`，直接配到任务上才生效：
 
 ```groovy
-tasks.matching { it.name in ['runClient', 'runServer', 'runData', 'runGameTestServer'] }
+tasks.matching { it.name in ['runClient', 'runServer', 'runData'] }
         .configureEach { task -> if (task instanceof JavaExec) task.jvmArgs(gameJvmArgs) }
 ```
 

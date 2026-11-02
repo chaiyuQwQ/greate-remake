@@ -27,13 +27,6 @@ neoForge {
             if (project.hasProperty('quickplay')) {
                 programArguments.addAll '--quickPlaySingleplayer', project.property('quickplay')
             }
-            // GameTest 走客户端集成服：GT 7.0.2 在 dev 专用服务端会因 dist 校验加载 ClientLevel 崩溃
-            // （runGameTestServer 不可用，见 docs/上游问题与补丁.md）。带 -Pgametest 启动后，
-            // 进世界执行 /test runall 即可跑 GameTest。
-            if (project.hasProperty('gametest')) {
-                systemProperty 'neoforge.enableGameTest', 'true'
-                systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
-            }
         }
         server {
             server()
@@ -49,12 +42,6 @@ neoForge {
                     '--existing', file('src/main/resources/').getAbsolutePath(),
                     '--existing-mod', 'create',
                     '--existing-mod', 'gtceu'
-        }
-        // GameTest（原仓库已配置但从未使用）
-        gameTestServer {
-            type = 'gameTestServer'
-            gameDirectory = project.file("run/gametest")
-            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }
     }
 
@@ -198,7 +185,7 @@ def gameJvmArgs = [
         '-Dfile.encoding=UTF-8',
 ]
 
-tasks.matching { it.name in ['runClient', 'runServer', 'runData', 'runGameTestServer'] }
+tasks.matching { it.name in ['runClient', 'runServer', 'runData'] }
         .configureEach { task ->
             if (task instanceof JavaExec) {
                 task.jvmArgs(gameJvmArgs)

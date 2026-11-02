@@ -103,7 +103,8 @@ for Minecraft 1.21.1 / NeoForge.
 - 电线涂层（spout 涂层）配方尚未移植。
 - 暂不提供 KubeJS 集成。
 - Java 包名沿用 `electrolyte.greate`，因此**不能与原版 Greate 装在一起**（两者的支持版本也不重叠）。
-- 0.1.0 属于开发预览：GameTest 32/32 通过、CI 冒烟全绿，但未做整合包级的长时间压力测试。
+- 0.1.0 属于开发预览：开发期 GameTest 32/32 与 CI 全绿（测试代码与测试结构不随仓库发布），
+  但未做整合包级的长时间压力测试。
 
 ### 致谢与许可
 
@@ -201,7 +202,8 @@ Server config `config/greate_remake-server.toml`:
 - No KubeJS integration.
 - The Java package is still `electrolyte.greate`, so this mod **cannot be installed alongside the
   original Greate** (their supported versions do not overlap either).
-- 0.1.0 is a development preview: GameTest passes 32/32 and CI is green, but no long-running
+- 0.1.0 is a development preview: GameTest passed 32/32 and CI was green during development
+  (the test suite and its structure are not shipped in this repository), but no long-running
   modpack stress test has been done.
 
 ### Credits and license
