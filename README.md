@@ -14,6 +14,8 @@ for Minecraft 1.21.1 / NeoForge.
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 ![Status](https://img.shields.io/badge/status-0.1.0%20preview-red)
 
+[modrinth](https://modrinth.com/mod/greate-remake)
+
 [中文](#中文) · [English](#english)
 
 > **非官方重制 / Unofficial remake.** 本项目是 [Greate](https://github.com/GreateBeyondTheHorizon/Greate)
